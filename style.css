@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* 
+Pilihan font: Quicksand/Poppins untuk judul dan heading, Roboto untuk caption/deskripsi
+font-family: 'Poppins', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Reset CSS (DARI PROGATE) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* setiap bagian disarankan menggunakan container agar lebar konten sama */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* Style Bagian 1 */
+
+/* Style Bagian 2 */
+
+/* Style Bagian 3 */
+
+/* Style Bagian 4 */
+
+/* Style Bagian 5 */
+
+
+/* css untuk tampilan tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 720px;
+    }
+}
+
+/* css untuk tampilan mobile */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 540px;
+    }
+}
