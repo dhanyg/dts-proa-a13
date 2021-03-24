@@ -8,14 +8,21 @@ font-family: 'Roboto', sans-serif;
 */
 
 /* Reset CSS (DARI PROGATE) */
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
   margin: 0;
   padding: 0;
-}
-
-body {
 }
 
 li {
@@ -27,18 +34,175 @@ a {
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* setiap bagian disarankan menggunakan container agar lebar konten sama */
 .container {
-    width: 1140px;
-    margin: 0 auto;
+  width: 1140px;
+  margin: 0 auto;
 }
 
 /* Style Bagian 1 */
 
 /* Style Bagian 2 */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f1f1;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+@media (min-width: 768px) {
+
+  #about.about-container,
+  #about .about .about-content {
+    max-width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  #about.about-container,
+  #about .about .about-content {
+    max-width: 970px;
+  }
+
+  #about .content-row {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #about .content-col-img {
+    width: 58.33333333%;
+    float: left;
+  }
+
+  #about .content-col-text {
+    width: 41.66666667%;
+    float: left;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  #about.about-container,
+  #about .about .about-content {
+    max-width: 1170px;
+  }
+}
+
+#about.about-container,
+#about .about .about-content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#about .about {
+  position: relative;
+  padding-top: 100px;
+  background: #f1f1f1;
+  background-size: cover;
+}
+
+#about .content-row {
+  width: 100%;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#about .content-col-img {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#about .col-img {
+  position: relative;
+  z-index: 77;
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#about .content-col-text {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#about .content-col-text .btn {
+  background-color: #f57f17;
+  border: 3px solid #f57f17;
+  border-radius: 0px;
+  color: #f1f1f1;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-bottom: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .4s;
+  outline: 0;
+  padding: 11px 28px;
+  vertical-align: middle;
+}
+
+#about .content-col-text .btn:hover {
+  background: transparent;
+  color: #f57f17;
+}
+
+#about ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#about li {
+  padding: 6px 0 9px 35px;
+  position: relative;
+  color: #555
+}
+
+#about li i {
+  min-width: 30px;
+  color: #f57f17;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 25px;
+}
+
+#about h3 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 45px;
+  color: #351c06;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+#about p {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #555;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
 
 /* Style Bagian 3 */
 
@@ -49,14 +213,14 @@ a {
 
 /* css untuk tampilan tablet */
 @media screen and (max-width: 768px) {
-    .container {
-        width: 720px;
-    }
+  .container {
+    width: 720px;
+  }
 }
 
 /* css untuk tampilan mobile */
 @media screen and (max-width: 576px) {
-    .container {
-        width: 540px;
-    }
+  .container {
+    width: 540px;
+  }
 }
