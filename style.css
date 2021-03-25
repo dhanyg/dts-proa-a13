@@ -45,11 +45,91 @@ a {
 /* Style Bagian 4 */
 .judul-testimoni {
   text-align: center;
-  color: #f57f17
+  color: #351c06
   padding-top:30px;
   padding-bottom: 10px;
 }
 
+.judul-testimoni h1 {
+  color: #351c06
+  max-width: 100%;
+  margin-bottom: 0;
+  overflow: hidden;
+  padding-bottom: 0 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.judul-testimoni .border {
+  width: 80%;
+  height: 5px;
+  background: #f57f17
+  margin:32px auto;
+}
+
+.testimoni {
+  width: 80%;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.testimoni .box-testi {
+  position: relative;
+  padding: 40px;
+  transition: 0.5s;
+  text-align: center;
+  background:#f57f17;
+  border:solid;
+  border-color: #f1f1f1;
+  border-width: 2px;
+  border-radius: 10%;
+}
+
+.testimoni .box-testi:hover {
+  background: #f1f1f1;
+  border:solid;
+  border-color: #f57f17;
+  border-width: 2px;
+  border-radius: 10%;
+}
+
+.testimoni .box-testi p {
+  margin: 20px 0;
+  padding:0;
+  transition: 0.5s;
+  font-family: "Roboto", sans-serif;
+}
+
+.testimoni .box-testi span {
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+}
+
+..testimoni .box-testi h3 {
+  margin: 20px 0 0 0;
+  padding:0;
+  font-family: "Quicksand", sans-serif;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.testimoni .box-testi h4 {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  font-size: 15px;
+  color:#555;
+  line-height: 20px;
+  font-family: "Quicksand", sans-serif;
+
+}
 /* Style Bagian 5 */
 
 
