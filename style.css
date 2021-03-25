@@ -7,6 +7,13 @@ font-family: 'Quicksand', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
+/*
+--background: #f1f1f1;
+--dominant: #f57f17;
+--text-primary: #351c06;
+--text-secondary: #555;
+*/
+
 /* Reset CSS (DARI PROGATE) */
 html, body,
 ul, ol, li,
@@ -32,7 +39,7 @@ a {
 
 /* setiap bagian disarankan menggunakan container agar lebar konten sama */
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -41,7 +48,83 @@ a {
 /* Style Bagian 2 */
 
 /* Style Bagian 3 */
-
+.explore-section {
+  font-family: 'Roboto', sans-serif;
+  color: #555;
+  background-color: #f1f1f1;
+  padding-bottom: 80px;
+}
+.explore-section .heading {
+  padding: 80px 0;
+}
+.explore-section h3 {
+  font-family: 'Quicksand', sans-serif;
+  color: #351c06;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.explore-section .explore-caption {
+  text-align: center;
+  font-size: 16px;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.explore-card-wrapper {
+  display: flex;
+  padding: 0 1em;
+}
+.explore-card {
+  width: 33.33%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 8px;
+  box-shadow: 4px 5px 3px 1px #ccc;
+}
+.explore-card .card-header{
+  width: 100%;
+  object-fit: cover;
+}
+.explore-card img {
+  width: 100%;
+}
+.explore-card .card-body {
+  padding: 15px;
+}
+.explore-card .card-title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  color: #351c06;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+.explore-card .card-price {
+  color: #f57f17;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0.5em 0;
+  display: inline-block;
+}
+.explore-card .card-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 10px;
+}
+.explore-card .btn {
+  padding: 0.75em 1.5em;
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.explore-card .btn-order {
+  background-color: #f57f17;
+  color: #fff;
+}
 /* Style Bagian 4 */
 
 /* Style Bagian 5 */
@@ -50,13 +133,27 @@ a {
 /* css untuk tampilan tablet */
 @media screen and (max-width: 768px) {
     .container {
-        width: 720px;
+        max-width: 720px;
+    }
+    .explore-card-wrapper {
+      flex-wrap: wrap;
+      padding: 0 0.5em;
+    }
+    .explore-card {
+      width: 100%;
+      margin: 0.8rem 5rem
     }
 }
 
 /* css untuk tampilan mobile */
 @media screen and (max-width: 576px) {
     .container {
-        width: 540px;
+        max-width: 540px;
+    }
+    .explore-card-wrapper {
+    }
+    .explore-card {
+      width: 100%;
+      margin: 0 15px 15px;
     }
 }
