@@ -45,29 +45,29 @@ a {
 /* Style Bagian 4 */
 .judul-testimoni {
   text-align: center;
-  color: #351c06
+  color: #351c06;
   padding-top:30px;
   padding-bottom: 10px;
 }
 
 .judul-testimoni h1 {
-  color: #351c06
   max-width: 100%;
   margin-bottom: 0;
   overflow: hidden;
-  padding-bottom: 0 25px;
+  padding-bottom: 25px;
   font-family: "Poppins", sans-serif;
+  color: #351c06;
 }
 
 .judul-testimoni .border {
-  width: 80%;
+  width: 90%;
   height: 5px;
-  background: #f57f17
-  margin:32px auto;
+  background-color: #351c06;
+  margin:22px auto;
 }
 
 .testimoni {
-  width: 80%;
+  width: 90%;
   margin: auto auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -77,45 +77,48 @@ a {
 }
 
 .testimoni .box-testi {
-  position: relative;
-  padding: 40px;
+  position: relative; 
+  padding: 10px 10px;
   transition: 0.5s;
   text-align: center;
   background:#f57f17;
   border:solid;
-  border-color: #f1f1f1;
-  border-width: 2px;
-  border-radius: 10%;
+  border-color: #351c06;
+  border-width: 4px;
+  
 }
 
 .testimoni .box-testi:hover {
   background: #f1f1f1;
   border:solid;
   border-color: #f57f17;
-  border-width: 2px;
-  border-radius: 10%;
+  border-width: 4px;
+  border-radius: 10% 0;
+  transition: 0.5s;
 }
 
 .testimoni .box-testi p {
   margin: 20px 0;
-  padding:0;
+  padding:10px;
   transition: 0.5s;
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color:#f1f1f1;
 }
 
 .testimoni .box-testi span {
-  font-size: 100px;
-  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
 }
 
-..testimoni .box-testi h3 {
-  margin: 20px 0 0 0;
+.testimoni .box-testi h3 {
+  margin: 15px 0 0 0;
   padding:0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
   transition: 0.5s;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: #f1f1f1;
   line-height: 22px;
   text-transform: uppercase;
 }
@@ -131,19 +134,37 @@ a {
 
 }
 
-.testimoni .box-testi:hover p,
-.testimoni .box-testi:hover h3,
-.testimoni .box-testi:hover h4, {
-  color:#f1f1f1;
-}
-
-.testimoni .box .img-box img {
+.testimoni .box-testi .img-box-testi img {
   width: 100px;
   height: 100px;
-  border-radius: 25%;
+  border-radius: 50%;
   border-style: solid;
   border-color:  #f1f1f1;
   border-width: 3px;
+}
+
+.testimoni .box-testi:hover p {
+  color:#f57f17;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  font-size: 16px;
+ }
+
+.testimoni .box-testi:hover h3 {
+  color:#351c06;
+  font-size: 18px;
+}
+
+.testimoni .box-testi:hover h4 {
+  color:#555;
+  font-size: 17px;
+
+}
+.testimoni .box-testi .img-box-testi:hover img {
+  border-color:#351c06;
+  width: 120px;
+  height: 120px;
+  transition: 0.5s;
 }
 /* Style Bagian 5 */
 
