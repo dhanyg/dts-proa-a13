@@ -46,8 +46,8 @@ a {
 
 /* setiap bagian disarankan menggunakan container agar lebar konten sama */
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* Style Bagian 1 */
@@ -59,17 +59,21 @@ a {
   top: 0;
   z-index: 10;
 }
+
 .logo {
   float: left;
 }
+
 .logo-img {
   height: 50px;
   margin: 10px 25px;
 }
+
 .menu-container {
   float: right;
   margin-right: 30px;
 }
+
 .menu {
   float: left;
   display: block;
@@ -78,6 +82,7 @@ a {
   padding: 0 10px;
   color: #a14b00;
 }
+
 .menu:hover {
   background-color: #a14b00;
   color: #f1f1f1;
@@ -85,6 +90,7 @@ a {
   margin-top: 15px;
   border-radius: 8px;
 }
+
 .nomor-tlp {
   display: block;
   background-color: #a14b00;
@@ -94,22 +100,25 @@ a {
   padding: 0 15px;
   margin-top: 15px;
   border-radius: 8px;
-  margin-left: 5px;  
+  margin-left: 5px;
   border: 2px solid #a14b00;
 }
+
 .nomor-tlp:hover {
   background-color: #f1f1f1;
   color: #a14b00;
   border: 2px solid #a14b00;
 }
+
 .heading {
   background-image: url(cover-kecil.jpg);
   height: 700px;
-  background-size: cover;  
+  background-size: cover;
   position: relative;
   clear: both;
   font-family: Poppins, sans-serif;
 }
+
 .heading-cptn-big {
   color: #a14b00;
   text-align: left;
@@ -117,16 +126,19 @@ a {
   width: 700px;
   padding: 200px 0 0 20px;
 }
+
 .heading-cptn-small {
   padding: 20px 0 0 20px;
   font-family: Roboto, sans-serif;
   width: 600px;
   color: #532700;
 }
+
 .btn-container {
   padding-top: 150px;
   text-align: center;
 }
+
 .btn {
   display: block;
   width: 220px;
@@ -134,44 +146,52 @@ a {
   text-align: center;
   border-radius: 8px;
 }
+
 .btn-order {
   display: inline-block;
   background-color: #a14b00;
   color: #f1f1f1;
-  margin-right: 30px;  
-  border: 2px solid #a14b00; 
+  margin-right: 30px;
+  border: 2px solid #a14b00;
 }
+
 .btn-order:hover {
   background-color: #f1f1f1;
   color: #a14b00;
 }
+
 .btn-learn-more {
   display: inline-block;
   background-color: #f1f1f1;
   color: #532700;
-  margin-left: 30px;  
+  margin-left: 30px;
   border: 2px solid #f1f1f1;
 }
+
 .btn-learn-more:hover {
   background-color: #a14b00;
   color: #f1f1f1;
 }
+
 .statistik-wrap {
   height: 100px;
   width: 100%;
-  background-color: #a14b00;  
+  background-color: #a14b00;
   text-align: center;
 }
+
 .statistik {
   float: left;
   display: block;
   width: 33.3333333333333%;
   color: #f1f1f1;
 }
+
 .statistik h1 {
   padding-top: 20px;
   font-size: 40px;
 }
+
 .statistik p {
   font: 20px;
 }
@@ -258,7 +278,6 @@ body {
 
 #about .col-img {
   position: relative;
-  z-index: 77;
   border-radius: 10px;
   display: block;
   max-width: 100%;
@@ -275,7 +294,7 @@ body {
 #about .content-col-text .btn {
   background-color: #f57f17;
   border: 3px solid #f57f17;
-  border-radius: 0px;
+  border-radius: .5rem;
   color: #f1f1f1;
   display: inline-block;
   font-size: 14px;
@@ -318,6 +337,7 @@ body {
 }
 
 #about h3 {
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   font-size: 32px;
   line-height: 45px;
@@ -343,9 +363,11 @@ body {
   background-color: #f1f1f1;
   padding-bottom: 80px;
 }
+
 .explore-section .explore-heading {
   padding: 80px 0;
 }
+
 .explore-section h3 {
   font-family: 'Quicksand', sans-serif;
   color: #351c06;
@@ -353,6 +375,7 @@ body {
   font-size: 36px;
   margin-bottom: 15px;
 }
+
 .explore-section .explore-caption {
   text-align: center;
   font-size: 16px;
@@ -360,10 +383,12 @@ body {
   margin: 0 auto;
   line-height: 1.5;
 }
+
 .explore-card-wrapper {
   display: flex;
   padding: 0 1em;
 }
+
 .explore-card {
   width: 33.33%;
   border-radius: 10px;
@@ -372,16 +397,20 @@ body {
   margin: 0 8px;
   box-shadow: 4px 5px 3px 1px #ccc;
 }
-.explore-card .card-header{
+
+.explore-card .card-header {
   width: 100%;
   object-fit: cover;
 }
+
 .explore-card img {
   width: 100%;
 }
+
 .explore-card .card-body {
   padding: 15px;
 }
+
 .explore-card .card-title {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
@@ -389,6 +418,7 @@ body {
   font-weight: 700;
   margin-bottom: 0.4em;
 }
+
 .explore-card .card-price {
   color: #f57f17;
   font-size: 24px;
@@ -396,11 +426,13 @@ body {
   margin: 0.5em 0;
   display: inline-block;
 }
+
 .explore-card .card-footer {
   display: flex;
   justify-content: flex-end;
   padding-bottom: 10px;
 }
+
 .explore-card .explore-btn {
   padding: 0.75em 1.5em;
   display: inline-block;
@@ -410,13 +442,16 @@ body {
   font-weight: 600;
   letter-spacing: 2px;
 }
+
 .explore-card .explore-btn-order {
   background-color: #f57f17;
   color: #fff;
 }
+
 .explore-btn-order:hover {
   background-color: #f7a863;
 }
+
 /* Style Bagian 4 */
 
 /* Style Bagian 5 */
@@ -424,28 +459,30 @@ body {
 
 /* css untuk tampilan tablet */
 @media screen and (max-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-    .explore-card-wrapper {
-      flex-wrap: wrap;
-      padding: 0 0.5em;
-    }
-    .explore-card {
-      width: 100%;
-      margin: 0.8rem 5rem
-    }
+  .container {
+    max-width: 720px;
+  }
+
+  .explore-card-wrapper {
+    flex-wrap: wrap;
+    padding: 0 0.5em;
+  }
+
+  .explore-card {
+    width: 100%;
+    margin: 0.8rem 5rem
+  }
 }
 
 /* css untuk tampilan mobile */
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-    .explore-card-wrapper {
-    }
-    .explore-card {
-      width: 100%;
-      margin: 0 15px 15px;
-    }
+  .container {
+    max-width: 540px;
+  }
+
+
+  .explore-card {
+    width: 100%;
+    margin: 0 15px 15px;
+  }
 }
