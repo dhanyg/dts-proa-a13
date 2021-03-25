@@ -37,6 +37,131 @@ a {
 }
 
 /* Style Bagian 1 */
+.nav-bar {
+  height: 70px;
+  width: 100%;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.logo {
+  float: left;
+}
+.logo-img {
+  height: 50px;
+  margin: 10px 25px;
+}
+.menu-container {
+  float: right;
+  margin-right: 30px;
+}
+.menu {
+  float: left;
+  display: block;
+  font-family: Roboto, sans-serif;
+  line-height: 70px;
+  padding: 0 10px;
+  color: #a14b00;
+}
+.menu:hover {
+  background-color: #a14b00;
+  color: #f1f1f1;
+  line-height: 40px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+.nomor-tlp {
+  display: block;
+  background-color: #a14b00;
+  color: #f1f1f1;
+  line-height: 40px;
+  float: left;
+  padding: 0 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  margin-left: 5px;  
+  border: 2px solid #a14b00;
+}
+.nomor-tlp:hover {
+  background-color: #f1f1f1;
+  color: #a14b00;
+  border: 2px solid #a14b00;
+}
+.heading {
+  background-image: url(cover-kecil.jpg);
+  height: 700px;
+  background-size: cover;  
+  position: relative;
+  clear: both;
+  font-family: Poppins, sans-serif;
+}
+.heading-cptn-big {
+  color: #a14b00;
+  text-align: left;
+  font-size: 40px;
+  width: 700px;
+  padding: 200px 0 0 20px;
+}
+.heading-cptn-small {
+  padding: 20px 0 0 20px;
+  font-family: Roboto, sans-serif;
+  width: 600px;
+  color: #532700;
+}
+.btn-container {
+  padding-top: 150px;
+  text-align: center;
+}
+.btn {
+  display: block;
+  width: 220px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 8px;
+}
+.btn-order {
+  display: inline-block;
+  background-color: #a14b00;
+  color: #f1f1f1;
+  margin-right: 30px;  
+  border: 2px solid #a14b00; 
+}
+.btn-order:hover {
+  background-color: #f1f1f1;
+  color: #a14b00;
+}
+.btn-learn-more {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #532700;
+  margin-left: 30px;  
+  border: 2px solid #f1f1f1;
+}
+.btn-learn-more:hover {
+  background-color: #a14b00;
+  color: #f1f1f1;
+}
+.statistik-wrap {
+  height: 100px;
+  width: 100%;
+  background-color: #a14b00;  
+  text-align: center;
+}
+.statistik {
+  float: left;
+  display: block;
+  width: 33.3333333333333%;
+  color: #f1f1f1;
+}
+.statistik h1 {
+  padding-top: 20px;
+  font-size: 40px;
+}
+.statistik p {
+  font: 20px;
+}
+
 
 /* Style Bagian 2 */
 
