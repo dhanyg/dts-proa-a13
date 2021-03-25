@@ -130,6 +130,21 @@ a {
   font-family: "Quicksand", sans-serif;
 
 }
+
+.testimoni .box-testi:hover p,
+.testimoni .box-testi:hover h3,
+.testimoni .box-testi:hover h4, {
+  color:#f1f1f1;
+}
+
+.testimoni .box .img-box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25%;
+  border-style: solid;
+  border-color:  #f1f1f1;
+  border-width: 3px;
+}
 /* Style Bagian 5 */
 
 
