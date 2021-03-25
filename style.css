@@ -166,6 +166,28 @@ a {
   height: 120px;
   transition: 0.5s;
 }
+
+.testi-lain {
+  margin: 20px 20px 20px 20px;
+  padding: 12px 24px;
+  color: #f1f1f1;
+  background-color: #351c06;
+  
+
+}
+
+.testi-lain:hover,
+.testi-lain:active {
+  color:#351c06;
+  background-color: #f1f1f1;
+  border-style:solid;
+  border-color: #351c06;
+  border-width: 2px;
+
+
+}
+
+}
 /* Style Bagian 5 */
 
 
