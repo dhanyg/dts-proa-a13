@@ -342,6 +342,7 @@ body {
   color: #555;
   background-color: #f1f1f1;
   padding-bottom: 80px;
+  letter-spacing: normal;
 }
 .explore-section .explore-heading {
   padding: 80px 0;
@@ -361,16 +362,24 @@ body {
   line-height: 1.5;
 }
 .explore-card-wrapper {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
   padding: 0 1em;
 }
 .explore-card {
-  width: 33.33%;
+  /* width: 33.33%; */
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
   margin: 0 8px;
   box-shadow: 4px 5px 3px 1px #ccc;
+  position: relative;
+  
+}
+.explore-card:hover {
+  
 }
 .explore-card .card-header{
   width: 100%;
@@ -378,16 +387,23 @@ body {
 }
 .explore-card img {
   width: 100%;
+  transition: .3s;
+}
+.explore-card img:hover {
+  transform: scale(1.075);
 }
 .explore-card .card-body {
   padding: 15px;
 }
 .explore-card .card-title {
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #351c06;
   font-weight: 700;
   margin-bottom: 0.4em;
+}
+.explore-card .card-caption {
+  line-height: 1.5;
 }
 .explore-card .card-price {
   color: #f57f17;
@@ -404,7 +420,7 @@ body {
 .explore-card .explore-btn {
   padding: 0.75em 1.5em;
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 5px;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 600;
@@ -413,14 +429,46 @@ body {
 .explore-card .explore-btn-order {
   background-color: #f57f17;
   color: #fff;
+  border: solid 3px #f57f17;
+  transition: .4s;
+}
+.explore-card-ribbon {
+  background-color: #f57f17;
+  width: 100%;
+  position: absolute;
+  top: 5%;
+  left: -36%;
+  transform: rotate(-40deg);
+  text-align: center;
+  padding: 8px 12px;
+  color: #f1f1f1;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  z-index: 5;
 }
 .explore-btn-order:hover {
-  background-color: #f7a863;
+  color: #f57f17;
+  background-color: #f1f1f1;
 }
 /* Style Bagian 4 */
 
 /* Style Bagian 5 */
 
+
+@media screen and (max-width: 992px)
+{
+  .explore-card-wrapper {
+    /* flex-wrap: wrap; */
+    grid-template-columns: 1fr 1fr;
+    /* row-gap: 20px; */
+    column-gap: 15px;
+    padding: 0 0.5em;
+  }
+  .card-extended {
+    display: none;
+  }
+}
 
 /* css untuk tampilan tablet */
 @media screen and (max-width: 768px) {
@@ -428,12 +476,17 @@ body {
         max-width: 720px;
     }
     .explore-card-wrapper {
-      flex-wrap: wrap;
+      /* flex-wrap: wrap; */
+      grid-template-columns: 1fr;
+      row-gap: 15px;
       padding: 0 0.5em;
     }
     .explore-card {
-      width: 100%;
+      /* width: 100%; */
       margin: 0.8rem 5rem
+    }
+    .card-extended {
+      display: block;
     }
 }
 
@@ -445,7 +498,7 @@ body {
     .explore-card-wrapper {
     }
     .explore-card {
-      width: 100%;
+      /* width: 100%; */
       margin: 0 15px 15px;
     }
 }
