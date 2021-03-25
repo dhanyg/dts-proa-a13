@@ -172,8 +172,6 @@ a {
   padding: 12px 24px;
   color: #f1f1f1;
   background-color: #351c06;
-  
-
 }
 
 .testi-lain:hover,
@@ -183,8 +181,6 @@ a {
   border-style:solid;
   border-color: #351c06;
   border-width: 2px;
-
-
 }
 
 }
@@ -196,6 +192,21 @@ a {
     .container {
         width: 720px;
     }
+    /* Bagian 4 */
+    .judul-testimoni {
+      max-width: 90%;
+      display: grid;
+    }
+    .testimoni {
+     max-width:90%; 
+     display: grid;
+    }
+    .testi-lain {
+      margin:0 170px;
+      text-align: center;
+      display: grid;
+    }
+    
 }
 
 /* css untuk tampilan mobile */
@@ -203,4 +214,22 @@ a {
     .container {
         width: 540px;
     }
+    /* Bagian 4 */
+    .judul-testimoni {
+      max-width: 90%;
+      display: grid;
+    }
+
+    .testimoni {
+      max-width: 90%;
+      display: grid;
+    }
+
+    .testi-lain {
+      margin:0 160px;
+      text-align: center;
+      display: grid;
+    }
+
+
 }
