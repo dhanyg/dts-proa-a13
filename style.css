@@ -46,7 +46,7 @@ a {
 
 /* setiap bagian disarankan menggunakan container agar lebar konten sama */
 .container {
-  max-width: 1140px;
+  /* max-width: 1140px; */
   margin: 0 auto;
 }
 
@@ -63,20 +63,18 @@ a {
 .logo {
   float: left;
 }
-
 .logo-img {
   height: 50px;
   margin: 10px 25px;
 }
-
 .menu-container {
   float: right;
   margin-right: 30px;
 }
 
 .menu {
-  float: left;
   display: block;
+  float: left;
   font-family: Roboto, sans-serif;
   line-height: 70px;
   padding: 0 10px;
