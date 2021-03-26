@@ -401,11 +401,10 @@ body {
   margin: 0 8px;
   box-shadow: 4px 5px 3px 1px #ccc;
   position: relative;
-  
+
 }
-.explore-card:hover {
-  
-}
+
+/* .explore-card:hover {} */
 
 .explore-card .card-header {
   width: 100%;
@@ -416,6 +415,7 @@ body {
   width: 100%;
   transition: .3s;
 }
+
 .explore-card img:hover {
   transform: scale(1.075);
 }
@@ -466,6 +466,7 @@ body {
   border: solid 3px #f57f17;
   transition: .4s;
 }
+
 .explore-card-ribbon {
   background-color: #f57f17;
   width: 100%;
@@ -491,7 +492,7 @@ body {
 .judul-testimoni {
   text-align: center;
   color: #351c06;
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: 10px;
 }
 
@@ -508,7 +509,7 @@ body {
   width: 90%;
   height: 5px;
   background-color: #351c06;
-  margin:22px auto;
+  margin: 22px auto;
 }
 
 .testimoni {
@@ -522,20 +523,20 @@ body {
 }
 
 .testimoni .box-testi {
-  position: relative; 
+  position: relative;
   padding: 10px 10px;
   transition: 0.5s;
   text-align: center;
-  background:#f57f17;
-  border:solid;
+  background: #f57f17;
+  border: solid;
   border-color: #f1f1f1;
   border-width: 4px;
-  
+
 }
 
 .testimoni .box-testi:hover {
   background: #f1f1f1;
-  border:solid;
+  border: solid;
   border-color: #f57f17;
   border-width: 4px;
   border-radius: 10% 0;
@@ -544,11 +545,11 @@ body {
 
 .testimoni .box-testi p {
   margin: 20px 0;
-  padding:10px;
+  padding: 10px;
   transition: 0.5s;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color:#f1f1f1;
+  color: #f1f1f1;
 }
 
 .testimoni .box-testi span {
@@ -558,7 +559,7 @@ body {
 
 .testimoni .box-testi h3 {
   margin: 15px 0 0 0;
-  padding:0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   transition: 0.5s;
   font-size: 16px;
@@ -573,7 +574,7 @@ body {
   padding: 0;
   transition: 0.5s;
   font-size: 15px;
-  color:#555;
+  color: #555;
   line-height: 20px;
   font-family: "Quicksand", sans-serif;
 
@@ -584,29 +585,30 @@ body {
   height: 100px;
   border-radius: 50%;
   border-style: solid;
-  border-color:  #f1f1f1;
+  border-color: #f1f1f1;
   border-width: 3px;
 }
 
 .testimoni .box-testi:hover p {
-  color:#351c06;
+  color: #351c06;
   background-color: #f1f1f1;
   transition: 0.5s;
   font-size: 16px;
- }
+}
 
 .testimoni .box-testi:hover h3 {
-  color:#351c06;
+  color: #351c06;
   font-size: 18px;
 }
 
 .testimoni .box-testi:hover h4 {
-  color:#555;
+  color: #555;
   font-size: 17px;
 
 }
+
 .testimoni .box-testi .img-box-testi:hover img {
-  border-color:#351c06;
+  border-color: #351c06;
   width: 120px;
   height: 120px;
   transition: 0.5s;
@@ -621,9 +623,9 @@ body {
 
 .testi-lain:hover,
 .testi-lain:active {
-  color:#351c06;
+  color: #351c06;
   background-color: #f1f1f1;
-  border-style:solid;
+  border-style: solid;
   border-color: #351c06;
   border-width: 2px;
 }
@@ -631,7 +633,7 @@ body {
 .judul-faq {
   text-align: center;
   color: #351c06;
-  padding-top:20px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 
@@ -652,6 +654,7 @@ body {
   border-width: 4px;
   border-color: #351c06;
 }
+
 .faq-accordian {
   margin: 20px 50px;
 }
@@ -663,13 +666,14 @@ body {
   padding: 1rem;
   border-style: solid;
   border-width: 2px;
-  box-shadow: 0.5rem 2px 0.5rem rgba(0,0,0,.4);
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, .4);
   border-color: #351c06;
 }
+
 .faq-accordian-link {
   margin: 2px;
   font-size: 1.6rem;
-  color:rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   text-decoration: none;
   background-color: #f57f17;
   width: 100%;
@@ -678,6 +682,7 @@ body {
   justify-content: space-between;
   padding: 1rem 1rem;
   border-radius: 10px 0px;
+  cursor: pointer;
 }
 
 .faq-accordian-jawaban {
@@ -715,9 +720,12 @@ body {
 
 }
 
-.faq-accordian-item:target .faq-accordian-jawaban {
-  max-height: 10rem;
+.checkbox {
+  display: none;
+}
 
+.checkbox:checked+.faq-accordian-jawaban {
+  max-height: 10rem;
 }
 
 
@@ -725,8 +733,7 @@ body {
 /* Style Bagian 5 */
 
 
-@media screen and (max-width: 992px)
-{
+@media screen and (max-width: 992px) {
   .explore-card-wrapper {
     /* flex-wrap: wrap; */
     grid-template-columns: 1fr 1fr;
@@ -734,6 +741,7 @@ body {
     column-gap: 15px;
     padding: 0 0.5em;
   }
+
   .card-extended {
     display: none;
   }
@@ -741,96 +749,110 @@ body {
 
 /* css untuk tampilan tablet */
 @media screen and (max-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-    /* Bagian 3   */
-    .explore-card-wrapper {
-      /* flex-wrap: wrap; */
-      grid-template-columns: 1fr;
-      row-gap: 15px;
-      padding: 0 0.5em;
-    }
-    .explore-card {
-      /* width: 100%; */
-      margin: 0.8rem 5rem
-    }
-    .card-extended {
-      display: block;
-    }
-  
-    /* Bagian 4 */
-    .judul-testimoni {
-      max-width: 90%;
-      display: contents;
-    }
-    .testimoni {
-     max-width:90%; 
-     display: contents;
-    }
-    .testi-lain {
-      margin:0 240px;
-      text-align: center;
-      display: grid;
-    }
-    .judul-faq {
-      max-width: 90%;
-      display: contents;
-    }
-    .faq {
-     max-width: 90%;
-     display: contents; 
-    }
-    .faq-accordian-item:target .faq-accordian-jawaban {
-      max-height: 100%;
-    }
-    .faq-accordian-jawaban::before {
-      height: 100%;
-    }
+  .container {
+    max-width: 720px;
+  }
+
+  /* Bagian 3   */
+  .explore-card-wrapper {
+    /* flex-wrap: wrap; */
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    padding: 0 0.5em;
+  }
+
+  .explore-card {
+    /* width: 100%; */
+    margin: 0.8rem 5rem
+  }
+
+  .card-extended {
+    display: block;
+  }
+
+  /* Bagian 4 */
+  .judul-testimoni {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .testimoni {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .testi-lain {
+    margin: 0 240px;
+    text-align: center;
+    display: grid;
+  }
+
+  .judul-faq {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .faq {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .checkbox:checked+.faq-accordian-jawaban {
+    max-height: 100%;
+  }
+
+  .faq-accordian-jawaban::before {
+    height: 100%;
+  }
 }
 
 /* css untuk tampilan mobile */
 @media screen and (max-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-    /* Bagian 3 */
-    .explore-card-wrapper {
-    }
-    .explore-card {
-      /* width: 100%; */
-      margin: 0 15px 15px;
-    }
-  
-    /* Bagian 4 */
-    .judul-testimoni {
-      max-width: 90%;
-      display: contents;
-    }
+  .container {
+    max-width: 540px;
+  }
 
-    .testimoni {
-      max-width: 90%;
-      display: block;
-    }
+  /* Bagian 3 */
+  /* .explore-card-wrapper {} */
 
-    .testi-lain {
-      margin:0 160px;
-      text-align: center;
-      display: grid;
-    }
-    .judul-faq {
-      max-width: 90%;
-      display: contents;
-    }
-    .faq {
-     max-width: 90%;
-     display: contents; 
-    }
-    .faq-accordian-item:target .faq-accordian-jawaban {
-      max-height: 100%;
-    }
-    .faq-accordian-jawaban::before {
-      height: 100%;
-    }
- 
+  .explore-card {
+    /* width: 100%; */
+    margin: 0 15px 15px;
+  }
+
+  /* Bagian 4 */
+  .judul-testimoni {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .testimoni {
+    max-width: 90%;
+    display: block;
+  }
+
+  .testi-lain {
+    margin: 0 160px;
+    text-align: center;
+    display: grid;
+  }
+
+  .judul-faq {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .faq {
+    max-width: 90%;
+    display: contents;
+  }
+
+  .checkbox:checked+.faq-accordian-jawaban {
+    max-height: 100%;
+  }
+
+  .faq-accordian-jawaban::before {
+    height: 100%;
+  }
+
 }
