@@ -1149,6 +1149,10 @@ footer {
     max-width: 540px;
   }
 
+  .contact-subscribe {
+    width: 80%;
+  }
+
   /* Bagian 3 */
   /* .explore-card-wrapper {} */
 
