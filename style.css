@@ -763,8 +763,7 @@ body {
   padding: 15px 26px;
   color: #fff;
   display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid #a14b00;
   font-size: 15px;
   font-family: Roboto, sans-serif;
@@ -775,8 +774,6 @@ body {
   color: #a14b00;
   border-radius: 4px;
   padding: 15px 26px;
-  opacity: 0.8;
-
 }
 
 input {
@@ -787,7 +784,7 @@ input {
   padding: 15px 20px;
   font-size: 15px;
   border: 1px solid black;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .contact-subscribe {
@@ -806,6 +803,7 @@ footer {
   padding-bottom: 10px;
   height: 100%;
   width: 100% ;
+  text-align: center;
 }
 
 .footer-list a {
