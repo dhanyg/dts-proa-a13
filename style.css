@@ -729,7 +729,149 @@ body {
 
 
 /* Style Bagian 5 */
+.bottom-alignment {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
+.bottom-container {
+  padding: 180px 0 100px 0;
+  text-align: center;
+}
+.bottom-alignment h2 {
+  color: #a14b00;
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 1100;
+  font-family: Roboto, sans-serif;
+}
+
+.bottom-alignment p {
+  font-size: 15px;
+  color: black;
+  padding-top: 18px;
+  font-family:Roboto, sans-serif;
+}
+
+.bottom-subscribe {
+  padding-top: 40px;
+}
+
+.bottom-subscribe a {
+  background-color: #a14b00 ;
+  padding: 15px 26px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  border: 1px solid #a14b00;
+  font-size: 15px;
+  font-family: Roboto, sans-serif;
+}
+
+.bottom-subscribe a:hover {
+  background-color: #fff;
+  color: #a14b00;
+  border-radius: 4px;
+  padding: 15px 26px;
+  opacity: 0.8;
+
+}
+
+input {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  padding: 15px 20px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.contact-subscribe {
+  background-color: #fff;
+  color: black;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+}
+
+footer {
+  background-color: #a14b00;
+  color: #555;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  width: 100% ;
+}
+
+.footer-list a {
+  color: #fff;
+  list-style: none;
+  padding-right: 8px;
+  padding-left: 8px;
+  float: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 17px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  display: block;
+}
+.footer-list a:hover {
+  background-color: #fff;
+  color: #a14b00;
+  padding-top: 8px;
+  border-radius: 4px; 
+}
+
+.footer-list ul {
+  display: inline-block;
+}
+
+.footer-list {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.fic {
+  color:white;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  display:inline-block;
+  opacity: 0.9;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.fic:hover {
+  background-color: #fff;
+  color: #a14b00;
+  border-radius: 4px;
+
+}
+.footer-icon {
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #fff;
+  padding-top: 15px;
+  font-size: 12px;
+  padding-left: 0 auto;
+  padding-right: 0 auto;
+  font-family:Roboto, sans-serif;
+  position: relative;
+}
 
 @media screen and (max-width: 992px) {
   .explore-card-wrapper {
