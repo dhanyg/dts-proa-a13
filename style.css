@@ -1144,7 +1144,7 @@ footer {
 }
 
 /* css untuk tampilan mobile */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 670px) {
   .container {
     max-width: 540px;
   }
