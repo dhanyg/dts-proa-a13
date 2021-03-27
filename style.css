@@ -51,8 +51,9 @@ a {
 }
 
 /* Style Bagian 1 */
+
 .nav-bar {
-  height: 70px;
+  height: 40px;
   width: 100%;
   background-color: #f1f1f1;
   position: fixed;
@@ -63,83 +64,89 @@ a {
 .logo {
   float: left;
 }
+
 .logo-img {
-  height: 50px;
-  margin: 10px 25px;
+  height: 30px;
+  margin: 5px 15px;
 }
-.menu-container {
+
+.menu-responsive-container {
   float: right;
-  margin-right: 30px;
-}
-
-.menu {
   display: block;
-  float: left;
-  font-family: Roboto, sans-serif;
-  line-height: 70px;
-  padding: 0 10px;
-  color: #a14b00;
 }
 
-.menu:hover {
-  background-color: #a14b00;
-  color: #f1f1f1;
-  line-height: 40px;
-  margin-top: 15px;
-  border-radius: 8px;
-}
-
-.nomor-tlp {
+.menu-res {
   display: block;
-  background-color: #a14b00;
-  color: #f1f1f1;
-  line-height: 40px;
-  float: left;
-  padding: 0 15px;
-  margin-top: 15px;
-  border-radius: 8px;
-  margin-left: 5px;
-  border: 2px solid #a14b00;
+  text-align: right;  
+  color: #f57f17;
+  margin: 0;
 }
 
-.nomor-tlp:hover {
+.menu-res-logo {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #f57f17;
+}
+
+.fa-bars {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.content-res {
+  display: none;
+  color: #f57f17;
   background-color: #f1f1f1;
-  color: #a14b00;
-  border: 2px solid #a14b00;
+  position: relative;
+  margin: 0;
+  padding: 3px 15px 3px 30px;
+}
+
+.menu-res:hover .content-res {
+  display: block;
+}
+
+.content-res:hover {
+  background-color: #f57f17;
+  color: #f1f1f1;
+}
+
+.menu-container {
+  display: none;
 }
 
 .heading {
   background-image: url(cover-kecil.jpg);
-  height: 700px;
+  height: 510px;  
   background-size: cover;
+  background-position: center;
   position: relative;
   clear: both;
   font-family: Poppins, sans-serif;
 }
 
 .heading-cptn-big {
-  color: #a14b00;
+  color: #f57f17;
   text-align: left;
+  width: 400px;
+  line-height: 45px;
   font-size: 40px;
-  width: 700px;
-  padding: 200px 0 0 20px;
+  padding: 80px 0 0 20px;
+  font-weight: bold;
 }
 
 .heading-cptn-small {
-  padding: 20px 0 0 20px;
-  font-family: Roboto, sans-serif;
-  width: 600px;
-  color: #532700;
+  padding: 10px 0 10px 20px;
+  background-color: #f1f1f1a4;
 }
 
 .btn-container {
-  padding-top: 150px;
   text-align: center;
 }
 
 .btn {
   display: block;
-  width: 220px;
+  width: 70%;
   padding: 10px 0;
   text-align: center;
   border-radius: 8px;
@@ -147,53 +154,264 @@ a {
 
 .btn-order {
   display: inline-block;
-  background-color: #a14b00;
+  background-color: #f57f17;
   color: #f1f1f1;
-  margin-right: 30px;
-  border: 2px solid #a14b00;
-}
-
-.btn-order:hover {
-  background-color: #f1f1f1;
-  color: #a14b00;
+  border: 2px solid #f57f17;
+  margin-top: 15px;
 }
 
 .btn-learn-more {
   display: inline-block;
   background-color: #f1f1f1;
-  color: #532700;
-  margin-left: 30px;
+  color: #f57f17;
   border: 2px solid #f1f1f1;
-}
-
-.btn-learn-more:hover {
-  background-color: #a14b00;
-  color: #f1f1f1;
+  margin-top: 15px;
 }
 
 .statistik-wrap {
-  height: 100px;
+  background-color: #f57f17;
+  color: #f1f1f1;
   width: 100%;
-  background-color: #a14b00;
   text-align: center;
 }
 
 .statistik {
-  float: left;
-  display: block;
-  width: 33.3333333333333%;
+  padding: 15px;
+}
+
+.menu:hover {
+  background-color: #f57f17;
+  color: #f1f1f1;
+  line-height: 25px;
+  padding: 0 5px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #f57f17;
+}
+
+.nomor-tlp:hover {
+  background-color: #f1f1f1;
+  color: #f57f17;
+  border: 2px solid #f57f17;
+}
+
+.btn-order:hover {
+  background-color: #f1f1f1;
+  color: #f57f17;
+}
+
+.btn-learn-more:hover {
+  background-color: #f57f17;
   color: #f1f1f1;
 }
 
-.statistik h1 {
-  padding-top: 20px;
-  font-size: 40px;
+.kontak-cepat {
+  display: block;
+  position: fixed;
+  bottom: 3px;
+  right: 2px;
+  font-size: 30px;
+  z-index: 1;
+  animation-name: kontakCepat;
+  animation-duration: 5s;
+  float: right;
+  width: 150px;
+  height: 35px;
 }
 
-.statistik p {
-  font: 20px;
+.kontak-cepat-logo {
+  text-decoration: none;
+  color: #f1f1f1;
+  display: block;
+  float: right;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #f57f17;
+  border-radius: 17.5px;
+  z-index: 10;
+  position: relative;
+  font-size: 25px;
 }
 
+.kontak-cepat-nomor {
+  display: none;
+  float: right;
+  color: #f1f1f1;
+  line-height: 35px;
+  height: 35px; 
+  font-size: 15px;
+  background-color: #f57f17;
+  padding: 0 30px 0 10px;
+  border-radius: 17.5px;
+  position: absolute;
+  z-index: 0;
+  margin-top: 0px;
+  animation: muncul 2s;
+  animation-play-state: paused;
+}
+
+.kontak-cepat:hover .kontak-cepat-nomor {
+  display: block;
+  animation-play-state: running;
+}
+
+@keyframes muncul {
+  0% {right: -120px}
+  100% {right: 2.5px}
+}
+
+@keyframes kontakCepat {
+  0% {bottom: 500px;
+    position: absolute;}
+  100% {bottom: 5px; 
+    position: fixed;
+  }
+}
+
+@media screen and (min-width: 671px) {
+  @keyframes kontakCepat {
+    0% {top: 0px;
+      position: absolute;}
+    100% {top: 250px; 
+      position: fixed;
+    }
+  }
+
+  .kontak-cepat {
+    top: 250px;
+    width: 200px;
+    height: 50px;
+  }
+
+  .kontak-cepat-logo {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    font-size: 30px;
+  }
+
+  .kontak-cepat-nomor {
+    font-size: 20px;
+    padding: 0 20px 0 10px;
+    margin-top: 7.5px;
+  }
+  
+  @keyframes muncul {
+    0% {right: -120px}
+    100% {right: 29px}
+  }
+
+  .nav-bar {
+    height: 50px;
+  }
+
+  .logo-img {
+    margin: 10px 15px;
+  }
+
+  .menu-responsive-container {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;   
+    float: right;
+    margin-right: 5px;
+  }
+
+  .menu {
+    display: block;
+    float: left;
+    font-family: Roboto, sans-serif;
+    line-height: 50px;
+    padding: 0 5px;
+    color: #f57f17;
+  }
+
+  .nomor-tlp {
+    display: block;
+    background-color: #f57f17;
+    color: #f1f1f1;
+    line-height: 25px;
+    float: left;
+    padding: 0 5px;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-left: 5px;
+    border: 2px solid #f57f17;
+  } 
+
+  .btn {
+    display: block;
+    width: 220px;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .btn-order {
+    display: inline-block;
+    background-color: #f57f17;
+    color: #f1f1f1;
+    margin-right: 30px;
+    border: 2px solid #f57f17;
+  }
+
+  .btn-learn-more {
+    display: inline-block;
+    background-color: #f1f1f1;
+    color: #f57f17;
+    margin-left: 30px;
+    border: 2px solid #f1f1f1;
+  }
+
+  .heading-cptn-big {
+    width: 600px;
+    padding: 180px 0 20px 20px;
+  }
+
+  .statistik {
+    float: left;
+    display: block;
+    color: #f1f1f1;
+    width: 33.3333%;
+    height: 90px;
+    margin: 0;
+  }
+
+  .statistik-wrap {
+    height: 90px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .heading-cptn-small {
+    padding: 5px 0 10px 40px;
+    font-family: Roboto, sans-serif;
+    width: 600px;
+    color: #f57f17;
+    background-color: #f1f1f100;
+  }
+
+  .heading-cptn-big {
+    width: 700px;
+    font-size: 40px;
+    padding: 190px 0 0 40px;
+    font-weight: bold;
+  }
+
+  .btn-container {
+    padding-top: 100px;
+  }
+
+  .heading {
+    height: 550px;
+  }
+}
 
 /* Style Bagian 2 */
 body {
