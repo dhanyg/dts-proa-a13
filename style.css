@@ -560,7 +560,7 @@ body {
   color: #555;
   background-color: #f1f1f1;
   padding-bottom: 80px;
-  letter-spacing: normal;
+  /* letter-spacing: normal; */
 }
 
 .explore-section .explore-heading {
@@ -580,7 +580,7 @@ body {
   font-size: 16px;
   width: 70%;
   margin: 0 auto;
-  line-height: 1.5;
+  line-height: 28px;
 }
 
 .explore-card-wrapper {
@@ -619,7 +619,7 @@ body {
 }
 
 .explore-card .card-body {
-  padding: 15px;
+  padding: 20px;
 }
 
 .explore-card .card-title {
@@ -632,6 +632,7 @@ body {
 
 .explore-card .card-caption {
   line-height: 1.5;
+  font-size: 14px;
 }
 
 .explore-card .card-price {
@@ -643,6 +644,7 @@ body {
 }
 
 .explore-card .card-footer {
+  margin-top: 15px;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 10px;
@@ -684,6 +686,26 @@ body {
 .explore-btn-order:hover {
   color: #f57f17;
   background-color: #f1f1f1;
+}
+
+.explore-wrapper-btn {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.explore-wrapper-btn .btn-paket-lain {
+  background-color: #f1f1f1;
+  color: #f57f17;
+  border: solid 3px #f57f17;
+  transition: .4s;
+  margin: 0 auto;
+  display: block;
+}
+
+.explore-wrapper-btn .btn-paket-lain:hover {
+  background-color: #f57f17;
+  color: #fff;
 }
 
 /* Style Bagian 4 */
@@ -828,6 +850,13 @@ body {
   border-width: 2px;
 }
 
+.wrapper-testi-lain {
+  width: 100%;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: center;
+}
+
 .judul-faq {
   text-align: center;
   color: #351c06;
@@ -944,12 +973,12 @@ body {
   letter-spacing: 1px;
   font-size: 30px;
   font-weight: 1100;
-  font-family: Roboto, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bottom-alignment p {
   font-size: 15px;
-  color: black;
+  color: #555;
   padding-top: 18px;
   font-family:Roboto, sans-serif;
 }
@@ -1122,9 +1151,10 @@ footer {
   }
 
   .testi-lain {
-    margin: 0 240px;
+    /* margin: 0 240px; */
+    /* margin: 0 auto; */
     text-align: center;
-    display: grid;
+    /* display: grid; */
   }
 
   .judul-faq {
@@ -1176,9 +1206,9 @@ footer {
   }
 
   .testi-lain {
-    margin: 0 160px;
+    /* margin: 0 160px; */
     text-align: center;
-    display: grid;
+    /* display: grid; */
   }
 
   .judul-faq {
