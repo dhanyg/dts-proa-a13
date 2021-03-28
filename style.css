@@ -116,7 +116,7 @@ a {
 }
 
 .heading {
-  background-image: url(cover-kecil.jpg);
+  background-image: url('images/cover-kecil.jpg');
   height: 590px;  
   background-size: cover;
   background-position: center;
